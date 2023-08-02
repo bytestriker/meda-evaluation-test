@@ -45,6 +45,7 @@ class CreateAdminUser extends Command
         $administrator->email = 'admin@meda.com.mx';
         $administrator->password = Hash::make('test');
         $administrator->type = 'admin';
+        $administrator->api_token = \Str::random(64);
         $administrator->save();
 
         print("Medá Administration User was successfully created" . PHP_EOL);

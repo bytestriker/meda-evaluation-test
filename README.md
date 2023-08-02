@@ -170,3 +170,10 @@ Extensiones requeridas:
 > `php artisan serve`
 >
 > y accede a la liga [localhost:8000](http://localhost:8000)
+
+
+### Para consultar el end point correspondiente al API `api/udi`, ejecuta la siguiente sentencia en la terminal
+
+`curl --location --request POST 'http://localhost:8000/api/udi' \
+--header 'Bmx-Token: ed560a808aa38664ab271561cda9da0a01e3c9627b57019962619a3993e77b2a' \
+--header 'Authorization: Bearer 82dC0kwoOzAYGloosq7zhFQzDuxaYZzodPAQTDjOjkYfgCkzyONSN3gismMdSYoc'`

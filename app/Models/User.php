@@ -14,6 +14,7 @@ class User extends Authenticatable
         'email_verified_at',
         'password',
         'type',
+        'api_token',
         'remember_token'
     ];
 
@@ -23,6 +24,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'string',
         'type' => 'string',
+        'api_token' => 'string',
         'remember_token' => 'string'
     ];
 
@@ -31,7 +33,8 @@ class User extends Authenticatable
         'email' => 'required|string|max:255',
         'email_verified_at' => 'nullable',
         'password' => 'required|string|max:255',
-        'type' => 'required|string|max:65535',
+        'type' => 'required|string|max:255',
+        'api_token' => 'max:64',
         'remember_token' => 'nullable|string|max:100',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
